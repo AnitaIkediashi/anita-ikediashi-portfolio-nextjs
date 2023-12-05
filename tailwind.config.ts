@@ -9,11 +9,14 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        'color-gray-100': "#f8f9fa",
-        'color-gray-200': "#dde7c7",
-        'color-green-100': "#bfd8bd",
-        'color-green-200': "#98c9a3",
-        'color-black': "#343a40",
+        'color-blue-100': "#1282a2",
+        'color-blue-200': "#034078",
+        'color-blue-300': "#001f54",
+        'color-blue-400': "#0a1128",
+        'color-white': "#fefcfb",
+      }, 
+      screens: {
+        xl: '1280px'
       }
     },
   },

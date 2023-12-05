@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Nunito_Sans } from "next/font/google";
+import { Inconsolata, Montserrat } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header";
 
-const nunito_san = Nunito_Sans({ subsets: ["latin"] });
+const incosolata = Inconsolata({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Anita Ikediashi | Personal Portfolio",
@@ -19,7 +19,7 @@ export default function RootLayout({
     <html lang="en">
       
       <body
-        className={`${nunito_san.className} bg-color-gray-100 scroll-smooth text-color-black`}
+        className={`${incosolata.className} bg-color-blue-400 scroll-smooth text-color-white`}
       >
         <Header />
         {children}
