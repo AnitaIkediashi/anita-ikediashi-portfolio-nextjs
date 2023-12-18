@@ -19,7 +19,7 @@ export default function RootLayout({
     <html lang="en">
       
       <body
-        className={`${incosolata.className} bg-color-blue-400 scroll-smooth text-color-white`}
+        className={`${incosolata.className} bg-color-blue-400  text-color-white overflow-x-hidden  `}
       >
         <Header />
         {children}

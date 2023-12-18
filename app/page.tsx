@@ -1,9 +1,17 @@
-import React from 'react'
+import About from "@/components/about";
+import Hero from "@/components/hero";
+import React from "react";
+// import {Element} from 'react-scroll'
 
-const page = () => {
+const Home = () => {
   return (
-    <div>page</div>
-  )
-}
+    <main className="overflow-y-hidden">
+      {/* home wrapper */}
+      <Hero />
+      {/* about section */}
+      <About />
+    </main>
+  );
+};
 
-export default page
+export default Home;

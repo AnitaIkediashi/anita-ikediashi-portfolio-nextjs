@@ -13,10 +13,10 @@ const Header = () => {
   return (
     <header className="relative backdrop-blur-sm w-screen h-20 bg-white/5 xl:px-[15rem] lg:px-[5rem] md:px-20 px-8 flex items-center justify-center">
       {/* social links */}
-      <nav className=" w-full h-full flex items-center justify-between">
-        <div className="flex items-center gap-2">
+      <nav className=" w-full h-full flex items-center justify-between ">
+        <div className="flex items-center gap-2 overflow-y-hidden">
           <motion.h2
-            className=" bg-color-white w-10 h-10 rounded-full text-color-blue-400 flex items-center justify-center font-bold text-lg"
+            className=" bg-color-white w-10 h-10 rounded-full text-color-blue-400 flex items-center justify-center font-bold text-lg "
             initial={{ opacity: 0 }}
             animate={{ rotate: [0, 360], opacity: 1, x: [-30, 0] }}
             transition={{ duration: 0.7 }}
@@ -31,8 +31,8 @@ const Header = () => {
             Anita Ikediashi
           </motion.span>
         </div>
-        <ul className="flex items-center gap-3">
-          <li>
+        <ul className="flex items-center gap-3 ">
+          <li className="overflow-y-hidden">
             <motion.a
               href="https://github.com/AnitaIkediashi"
               target="_blank"
@@ -44,7 +44,7 @@ const Header = () => {
               <FontAwesomeIcon icon={faGithub} />
             </motion.a>
           </li>
-          <li>
+          <li className="overflow-y-hidden">
             <motion.a
               href="https://www.linkedin.com/in/anita-ikediashi-a61668188/"
               target="_blank"
@@ -53,10 +53,10 @@ const Header = () => {
               animate={{ rotate: [0, -360], opacity: 1, x: [-30, 0] }}
               transition={{ duration: 0.7 }}
             >
-              <FontAwesomeIcon icon={faLinkedinIn} className="" />
+              <FontAwesomeIcon icon={faLinkedinIn}  />
             </motion.a>
           </li>
-          <li>
+          <li className="overflow-y-hidden">
             <motion.a
               href="https://twitter.com/Anita_ikediashi"
               target="_blank"
@@ -65,7 +65,7 @@ const Header = () => {
               animate={{ rotate: [0, -360], opacity: 1, x: [-30, 0] }}
               transition={{ duration: 0.7 }}
             >
-              <FontAwesomeIcon icon={faXTwitter} className="" />
+              <FontAwesomeIcon icon={faXTwitter} />
             </motion.a>
           </li>
         </ul>
