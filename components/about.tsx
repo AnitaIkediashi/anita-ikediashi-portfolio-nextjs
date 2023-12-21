@@ -6,7 +6,7 @@ import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons"; 
 import AOS from "aos";
-import "aos/dist/aos.css";
+// import "aos/dist/aos.css";
 
 const About = () => {
 
@@ -52,7 +52,7 @@ const About = () => {
 
         {/* p tag - summary */}
         <div className="lg:order-2 h-fit bg-color-blue-200/20 rounded-lg p-5 ">
-          <p className=" text-lg ">
+          <p className=" lg:text-lg md:text-xl text-base">
             Hi 👋, my name is Anita, a frontend developer based in Lagos state,
             Nigeria. Proficient in HTML, CSS and JavaScript. I specialize in
             crafting visually striking and responsive user interfaces.
@@ -64,7 +64,7 @@ const About = () => {
             experience.
           </p>
           {/* download cv */}
-          <button className="my-4 px-5 py-2 font-medium bg-color-blue-400 rounded-md text-lg tracking-wide capitalize hover:bg-color-blue-300 hover:scale-110 active:scale-105 transition group">
+          <button className="my-4 px-5 py-2 font-medium bg-color-blue-400 rounded-md lg:text-lg md:text-xl text-base tracking-wide capitalize hover:bg-color-blue-300 hover:scale-110 active:scale-105 transition group">
             <a href="/anita_ikediashi_cv.pdf" download>
               <FontAwesomeIcon
                 icon={faDownload}

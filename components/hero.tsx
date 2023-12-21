@@ -67,7 +67,7 @@ const Hero = () => {
             frontend developer
           </motion.h1>
           <motion.p
-            className="w-full max-w-sm text-center mx-auto text-color-white/75 md:text-base text-sm"
+            className="w-full max-w-sm text-center mx-auto text-color-white/75 lg:text-base text-lg"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1, x: [100, 0] }}
             transition={{
@@ -83,7 +83,7 @@ const Hero = () => {
         </div>
       </section>
       <motion.div
-        className="w-full flex justify-center items-center xl:-mt-3 md:-mt-16 -mt-28 lg:-mt-8"
+        className="w-full flex justify-center items-center xl:-mt-3  -mt-16 lg:-mt-4"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{

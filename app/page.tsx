@@ -1,4 +1,5 @@
 import About from "@/components/about";
+import Experience from "@/components/experience";
 import Hero from "@/components/hero";
 import React from "react";
 // import {Element} from 'react-scroll'
@@ -10,6 +11,9 @@ const Home = () => {
       <Hero />
       {/* about section */}
       <About />
+      {/* education section */}
+      <Experience />
+      {/* project section */}
     </main>
   );
 };

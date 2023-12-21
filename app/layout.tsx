@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inconsolata, Montserrat } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header";
+import "aos/dist/aos.css";
 
 const incosolata = Inconsolata({ subsets: ["latin"] });
 

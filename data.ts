@@ -1,3 +1,7 @@
+import {faGithub} from '@fortawesome/free-brands-svg-icons'
+import {faLink} from '@fortawesome/free-solid-svg-icons'
+
+
 export const navLinks = [
     {
         'title': 'home',
@@ -65,5 +69,57 @@ export const skills = [
     {
         "skill": "/icons8-database-80.png",
         "alt": "sql",
-    }
+    },
+    {
+        "skill": "/icons8-firebase-96.png",
+        "alt": "firebase",
+    },
+] as const;
+
+export const experience = [
+    {
+        "date": "january 2023 - present",
+        "company": "huawei",
+        "jobTitle": "software engineer 🔹 ",
+        "role1": "Collaborated with cross-functional teams to identify automation opportunities, gather requirements, create custom scripts and tools to automate repetitive tasks, leading to a notable 10% savings in time and resources.",
+        "role2": "Integrated monitoring and logging tools into existing systems and cloud platforms, enabling proactive identification and resolution of issues."
+    },
+    {
+        "date": "december 2021 - present",
+        "company": "freelance",
+        "jobTitle": "frontend engineer 🔹 ",
+        "role1": "Developed and styled over 10 interactive web applications utilizing modern frontend frameworks like React and Next.JS to ensure optimal performance and a seamless user experience.",
+        "role2": "Collaborated with UX/UI designers and backend engineers to translate wireframes and prototypes into functional, visually appealing interfaces for organizations in the community."
+    },
+] as const
+
+export const projects = [
+  {
+    image: "/image4.png",
+    desc: "A restaurant web page built with smooth animations, seamless navigation, checkout session.",
+    title: "AfriDishes",
+    icons: [faGithub, faLink],
+    tools: ["/icons8-react-100.png", "/icons8-tailwindcss-96.png", "/icons8-stripe-logo-96.png"],
+  },
+  {
+    image: "/image1.png",
+    desc: "Contributed to the development of law firm landing page ensuring a responsive design and optimal user experience.",
+    title: "Morgan & Associates",
+    icons: [faGithub, faLink],
+    tools: ["/icons8-react-100.png", "/icons8-tailwindcss-96.png", "/aos_logo"],
+  },
+  {
+    image: "/image3.png",
+    desc: "A real time blog application built with react, firebase storage, authentication and firestore.",
+    title: "MyBlog",
+    icons: [faGithub, faLink],
+    tools: ["/icons8-react-100.png", "/icons8-tailwindcss-96.png", "/icons8-firebase-96.png"],
+  },
+  {
+    image: "/image2.png",
+    desc: "A dashboard built with react and react hooks to monitor a user income and expenses.",
+    title: "Budget",
+    icons: [faGithub, faLink],
+    tools: ["/icons8-react-100.png", "/icons8-tailwindcss-96.png", "/icons8-firebase-96.png"],
+  },
 ] as const;
