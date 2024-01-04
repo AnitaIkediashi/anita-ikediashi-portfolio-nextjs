@@ -98,28 +98,77 @@ export const projects = [
     image: "/image4.png",
     desc: "A restaurant web page built with smooth animations, seamless navigation, checkout session.",
     title: "AfriDishes",
-    icons: [faGithub, faLink],
-    tools: ["/icons8-react-100.png", "/icons8-tailwindcss-96.png", "/icons8-stripe-logo-96.png"],
+    icons: [
+      {
+        id: 1,
+        githubIcon: faGithub,
+        repoLink: "https://github.com/AnitaIkediashi/AfriDishes-frontend.git",
+        linkIcon: faLink,
+        url: "https://fullstack-app-tvcb.vercel.app/",
+      },
+    ],
+    tools: [
+      "/icons8-react-100.png",
+      "/icons8-tailwindcss-96.png",
+      "/icons8-stripe-logo-96.png",
+    ],
   },
   {
-    image: "/image1.png",
+    image: "/image1.PNG",
     desc: "Contributed to the development of law firm landing page ensuring a responsive design and optimal user experience.",
     title: "Morgan & Associates",
-    icons: [faGithub, faLink],
-    tools: ["/icons8-react-100.png", "/icons8-tailwindcss-96.png", "/aos_logo"],
+    icons: [
+      {
+        id: 2,
+        githubIcon: faGithub,
+        repoLink:
+          "https://github.com/AnitaIkediashi/morgan---associate-design.git",
+        linkIcon: faLink,
+        url: "https://morgan-associate-design.vercel.app/",
+      },
+    ],
+    tools: [
+      "/icons8-react-100.png",
+      "/icons8-tailwindcss-96.png",
+      "/aos_logo.png",
+    ],
   },
   {
-    image: "/image3.png",
+    image: "/imag3.png",
     desc: "A real time blog application built with react, firebase storage, authentication and firestore.",
     title: "MyBlog",
-    icons: [faGithub, faLink],
-    tools: ["/icons8-react-100.png", "/icons8-tailwindcss-96.png", "/icons8-firebase-96.png"],
+    icons: [
+      {
+        id: 3,
+        githubIcon: faGithub,
+        repoLink: "https://github.com/AnitaIkediashi/blog-crud-app.git",
+        linkIcon: faLink,
+        url: "http://blog-crud-app.vercel.app/",
+      },
+    ],
+    tools: [
+      "/icons8-react-100.png",
+      "/icons8-tailwindcss-96.png",
+      "/icons8-firebase-96.png",
+    ],
   },
   {
     image: "/image2.png",
     desc: "A dashboard built with react and react hooks to monitor a user income and expenses.",
     title: "Budget",
-    icons: [faGithub, faLink],
-    tools: ["/icons8-react-100.png", "/icons8-tailwindcss-96.png", "/icons8-firebase-96.png"],
+    icons: [
+      {
+        id: 4,
+        githubIcon: faGithub,
+        repoLink: "https://github.com/AnitaIkediashi/budget-app.git",
+        linkIcon: faLink,
+        url: "https://budget-app-silk.vercel.app/",
+      },
+    ],
+    tools: [
+      "/icons8-react-100.png",
+      "/icons8-tailwindcss-96.png",
+      "/icons8-firebase-96.png",
+    ],
   },
 ] as const;
