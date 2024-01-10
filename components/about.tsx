@@ -1,15 +1,13 @@
-'use client'
+"use client";
 
 import React, { useEffect } from "react";
 import { skills } from "@/data";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDownload } from "@fortawesome/free-solid-svg-icons"; 
+import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import AOS from "aos";
 
-
 const About = () => {
-
   useEffect(() => {
     AOS.init();
   }, []);

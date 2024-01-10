@@ -95,6 +95,7 @@ export const experience = [
 
 export const projects = [
   {
+    idx: 1,
     image: "/image4.png",
     desc: "A restaurant web page built with smooth animations, seamless navigation, checkout session.",
     title: "AfriDishes",
@@ -114,6 +115,7 @@ export const projects = [
     ],
   },
   {
+    idx: 2,
     image: "/image1.PNG",
     desc: "Contributed to the development of law firm landing page ensuring a responsive design and optimal user experience.",
     title: "Morgan & Associates",
@@ -134,6 +136,7 @@ export const projects = [
     ],
   },
   {
+    idx: 3,
     image: "/imag3.png",
     desc: "A real time blog application built with react, firebase storage, authentication and firestore.",
     title: "MyBlog",
@@ -153,6 +156,7 @@ export const projects = [
     ],
   },
   {
+    idx: 4,
     image: "/image2.png",
     desc: "A dashboard built with react and react hooks to monitor a user income and expenses.",
     title: "Budget",

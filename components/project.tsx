@@ -1,42 +1,28 @@
 "use client";
 
-import React, { useRef } from "react";
+import React, { useEffect } from "react";
 import { projects } from "@/data";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { motion, Variants } from "framer-motion";
+import AOS from "aos";
 
 type ProjectProp = (typeof projects)[number];
 
-const Project = ({ image, desc, title, icons, tools }: ProjectProp) => {
+const Project = ({ image, desc, title, icons, tools, idx }: ProjectProp) => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
 
-  const cardVariant: Variants = {
-    offscreen: {
-      y: 0,
-      opacity: 0,
-    },
-    onscreen: {
-      y: [100, 0],
-      opacity: 1,
-      transition: {
-        type: "spring",
-        bounce: 0.4,
-        duration: 1.5,
-        delay: 1.8
-      },
-    },
-  };
 
   return (
-    <motion.div
-      initial="offscreen"
-      whileInView="onscreen"
+    <div
       className="overflow-y-hidden"
-      viewport={{ once: true, amount: 0.8 }}
+      data-aos="fade-up-right"
+      data-aos-delay={idx % 2 == 0 ? "400" : "650"}
+      data-aos-once="true"
     >
-      <motion.article
-        variants={cardVariant}
-        className="w-full h-52 rounded-md md:bg-color-blue-100/30 md:grid lg:grid-cols-[308px,1fr] md:grid-cols-[250px,1fr] gap-2 relative "
+      <article
+        className="w-full h-52 rounded-md md:bg-color-blue-100/30 md:grid lg:grid-cols-[308px,1fr] md:grid-cols-[250px,1fr] gap-2 relative"
         key={title}
       >
         <div className="md:flex flex-col pl-3 md:self-center lg:gap-2 hidden">
@@ -77,11 +63,11 @@ const Project = ({ image, desc, title, icons, tools }: ProjectProp) => {
             alt="projects"
             width={150}
             height={150}
-            quality={80}
+            quality={70}
             className="w-full h-full object-cover group-hover:scale-105 transition duration-300 ease-in"
           />
           {/* hover title */}
-          <div className="absolute inset-0 z-10 w-full h-full bg-black/70 flex flex-col gap-2 items-center justify-center  opacity-0 group-hover:opacity-100 origin-top scale-y-0 group-hover:scale-y-100 transition duration-300 ease-linear ">
+          <div className="absolute inset-0 z-10 w-full h-full bg-black/70 backdrop-blur-sm flex flex-col gap-2 items-center justify-center  opacity-0 group-hover:opacity-100 origin-top scale-y-0 group-hover:scale-y-100 transition duration-300 ease-linear ">
             <h3 className="text-color-white text-bold text-lg">{title}</h3>
 
             <button className="md:hidden">
@@ -104,8 +90,8 @@ const Project = ({ image, desc, title, icons, tools }: ProjectProp) => {
             </button>
           </div>
         </div>
-      </motion.article>
-    </motion.div>
+      </article>
+    </div>
   );
 };
 

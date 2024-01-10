@@ -11,7 +11,7 @@ import { animateScroll as scroll } from "react-scroll";
 const Hero = () => {
 
   const scrollTo = () => {
-    scroll.scrollTo(180); // Scrolling to 180px from the top of the page.
+    scroll.scrollTo(650); // Scrolling to 700px from the top of the page.
   };
 
   return (

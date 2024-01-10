@@ -1,13 +1,26 @@
 *{
     overflow-x: hidden;
     box-sizing: border-box;
-    scroll-behavior: smooth;
 }
-
 
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* html {
+    @apply scroll-smooth 
+} */
+
+html ::-webkit-scrollbar {
+    @apply w-4
+}
+
+html ::-webkit-scrollbar-track {
+    @apply bg-color-blue-100/40 
+}
+
+html ::-webkit-scrollbar-thumb {
+    @apply bg-color-blue-100 rounded-md border-4 border-solid border-transparent bg-clip-content	
+}
 
