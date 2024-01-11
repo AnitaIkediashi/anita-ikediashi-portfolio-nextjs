@@ -20,7 +20,7 @@ const Footer = () => {
 
 
   return (
-    <footer className="xl:px-[15rem] lg:px-[5rem] md:px-20 px-8 w-screen h-[27rem] bg-color-blue-300/20 mt-28 flex items-center justify-center pb-6">
+    <footer className="xl:px-[15rem] lg:px-[5rem] md:px-20 px-8 w-screen h-[27rem] bg-color-blue-300/20 mt-12 flex items-center justify-center pb-6">
       <div
         ref={ref}
         className="flex flex-col items-center justify-center gap-3"

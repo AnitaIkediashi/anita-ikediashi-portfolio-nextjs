@@ -14,7 +14,7 @@ const About = () => {
 
   return (
     <section
-      className="md:h-screen w-full xl:px-[15rem] lg:px-[5rem] md:px-20 px-8 py-24 md:py-0 relative flex flex-col justify-center overflow-y-hidden"
+      className="lg:h-screen md:h-[90vh] w-full xl:px-[15rem] lg:px-[5rem] md:px-20 px-8 py-24 md:py-0 relative flex flex-col justify-center overflow-y-hidden"
       data-aos="fade-up"
       data-aos-delay="650"
       data-aos-duration="1200"

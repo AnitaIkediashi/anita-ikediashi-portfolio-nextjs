@@ -27,7 +27,7 @@ const ScrollToTop = () => {
     <>
       {showButton && (
         <button
-          className="fixed bottom-10 right-6 bg-color-blue-200 w-7 h-7 rounded-sm grid place-items-center cursor-pointer overflow-y-hidden hover:bg-color-blue-100 duration-300 transition"
+          className="fixed bottom-10 right-6 bg-color-blue-200 w-7 h-7 rounded-sm grid place-items-center cursor-pointer overflow-y-hidden hover:bg-color-blue-100 duration-300 transition z-20"
           onClick={scrollToTop}
         >
           <FontAwesomeIcon icon={faArrowUp} />
