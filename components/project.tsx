@@ -17,7 +17,7 @@ const Project = ({ image, desc, title, icons, tools, idx }: ProjectProp) => {
   return (
     <div
       className="overflow-y-hidden"
-      data-aos="fade-up-right"
+      data-aos={idx % 2 == 0 ? "fade-up-right" : "fade-up-left"}
       data-aos-delay={idx % 2 == 0 ? "400" : "650"}
       data-aos-once="true"
     >
