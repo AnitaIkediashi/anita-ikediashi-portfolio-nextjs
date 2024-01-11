@@ -157,7 +157,7 @@ export const projects = [
   },
   {
     idx: 4,
-    image: "/image2.png",
+    image: "/image2.PNG",
     desc: "A dashboard built with react and react hooks to monitor a user income and expenses.",
     title: "Budget",
     icons: [
