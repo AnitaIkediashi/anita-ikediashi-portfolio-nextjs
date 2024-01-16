@@ -166,7 +166,7 @@ export const projects = [
         githubIcon: faGithub,
         repoLink: "https://github.com/AnitaIkediashi/budget-app.git",
         linkIcon: faLink,
-        url: "https://budget-app-silk.vercel.app/",
+        url: "https://budget-app-red.vercel.app/",
       },
     ],
     tools: [

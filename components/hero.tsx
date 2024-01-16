@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import profilePic from "@/public/profic_pic.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
@@ -9,10 +9,6 @@ import { motion } from "framer-motion";
 import { animateScroll as scroll } from "react-scroll";
 
 const Hero = () => {
-
-  const scrollTo = () => {
-    scroll.scrollTo(650); // Scrolling to 700px from the top of the page.
-  };
 
   return (
     <>
@@ -82,7 +78,7 @@ const Hero = () => {
           </motion.p>
         </div>
       </section>
-      <motion.div
+      {/* <motion.div
         className="w-full flex justify-center items-center xl:-mt-3  -mt-16 lg:-mt-4"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -98,11 +94,11 @@ const Hero = () => {
           transition={{
             duration: 1,
           }}
-          onClick={scrollTo}
+          onClick={scrollToOnMobile}
         >
           <FontAwesomeIcon icon={faArrowDown} />
         </motion.button>
-      </motion.div>
+      </motion.div> */}
     </>
   );
 };
