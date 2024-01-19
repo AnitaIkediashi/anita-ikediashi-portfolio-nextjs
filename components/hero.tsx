@@ -91,7 +91,7 @@ const Hero = ({ sectionId }: ScrollToSectionProp) => {
         offset={15}
       >
         <motion.button
-          className=" w-9 h-9 border border-color-white/10 rounded-full cursor-pointer overflow-y-hidden hover:bg-color-white/20 transition duration-300 absolute bottom-0 "
+          className=" w-9 h-9 border border-color-white/10 rounded-full cursor-pointer overflow-y-hidden hover:bg-color-white/20 transition duration-300 absolute bottom-[0.5rem] "
           initial={{ opacity: 0, x: "-50%" }}
           animate={{ opacity: 1, x: "-50%" }}
           transition={{
