@@ -3,15 +3,11 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import profilePic from "@/public/profic_pic.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { motion } from "framer-motion";
-import { animateScroll as scroll } from "react-scroll";
 
 const Hero = () => {
 
   return (
-    <>
       <section className="relative h-[80vh] w-full xl:px-[15rem] lg:px-[5rem] md:px-20 px-8 flex flex-col justify-center items-center pt-10 overflow-hidden ">
         {/* a circle */}
         <motion.div
@@ -78,28 +74,7 @@ const Hero = () => {
           </motion.p>
         </div>
       </section>
-      {/* <motion.div
-        className="w-full flex justify-center items-center xl:-mt-3  -mt-16 lg:-mt-4"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{
-          delay: 1.5,
-          duration: 2,
-        }}
-      >
-        <motion.button
-          className=" w-9 h-9 border border-color-white/10 rounded-full cursor-pointer overflow-y-hidden"
-          whileTap={{ scale: 0.8 }}
-          whileHover={{ scale: 0.8 }}
-          transition={{
-            duration: 1,
-          }}
-          onClick={scrollToOnMobile}
-        >
-          <FontAwesomeIcon icon={faArrowDown} />
-        </motion.button>
-      </motion.div> */}
-    </>
+      
   );
 };
 
