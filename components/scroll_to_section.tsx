@@ -14,7 +14,7 @@ const ScrollToSection = ({ sectionId }: ScrollToSectionProp) => {
 
   return (
     <Link
-      className="w-full flex justify-center items-center xl:-mt-3 -mt-8 lg:-mt-4 overflow-hidden"
+      className="w-full lg:flex hidden justify-center items-center xl:-mt-3 -mt-8 lg:-mt-4 overflow-hidden"
       to={sectionId}
       smooth="smooth"
     >
