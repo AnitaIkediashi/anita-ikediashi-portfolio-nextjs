@@ -11,9 +11,12 @@ const Experience = () => {
       <div className="w-full  grid lg:grid-cols-[200px,1fr] grid-cols-1 lg:gap-6 gap-0">
         {experience.map(
           ({ date, company, jobTitle, role1, role2, role3, role4 }) => (
-            <article key={date}>
+            <>
               {/* years of experience */}
-              <h3 className="uppercase tracking-wide lg:text-lg text-xl opacity-60">
+              <h3
+                className="uppercase tracking-wide lg:text-lg text-xl opacity-60"
+                key={date}
+              >
                 {date}
               </h3>
               {/* content - company name, job title and roles */}
@@ -42,7 +45,7 @@ const Experience = () => {
                   ◻️ {role4}
                 </p>
               </div>
-            </article>
+            </>
           )
         )}
       </div>
