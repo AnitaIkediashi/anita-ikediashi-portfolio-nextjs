@@ -38,14 +38,8 @@ const Project = ({ image, desc, title, icons, tools, idx }: ProjectProp) => {
           </div>
           {/* icons */}
           <button className="flex items-center gap-1 -mt-1 lg:text-lg text-base">
-            {icons.map(({ id, githubIcon, linkIcon, url, repoLink }) => (
+            {icons.map(({ id, linkIcon, url }) => (
               <span key={id}>
-                <a href={repoLink} target="_blank">
-                  <FontAwesomeIcon
-                    icon={githubIcon}
-                    className="inline-block w-5 h-5 lg:h-6 p-1 lg:w-6 mr-2 border border-color-white/30 rounded-md hover:text-color-white/50 hover:rotate-6 transition active:scale-105"
-                  />
-                </a>
                 <a href={url} target="_blank">
                   <FontAwesomeIcon
                     icon={linkIcon}
@@ -71,14 +65,8 @@ const Project = ({ image, desc, title, icons, tools, idx }: ProjectProp) => {
             <h3 className="text-color-white text-bold text-lg">{title}</h3>
 
             <button className="md:hidden">
-              {icons.map(({ id, githubIcon, linkIcon, url, repoLink }) => (
+              {icons.map(({ id, linkIcon, url }) => (
                 <span key={id}>
-                  <a href={repoLink} target="_blank" className="">
-                    <FontAwesomeIcon
-                      icon={githubIcon}
-                      className="hover:bg-color-white/20 hover:rotate-6 transition duration-300 ease-linear border border-color-white/50 rounded-md w-6 h-6 p-1 mr-3"
-                    />
-                  </a>
                   <a href={url} target="_blank">
                     <FontAwesomeIcon
                       icon={linkIcon}
