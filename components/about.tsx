@@ -63,7 +63,7 @@ const About = () => {
           </p>
           {/* download cv */}
           <button className="mt-4 px-5 py-2 font-medium bg-color-blue-400 rounded-md lg:text-lg md:text-xl text-base tracking-wide capitalize hover:bg-color-blue-300 hover:scale-110 active:scale-105 transition group">
-            <a href="/Anita Ikediashi CV.pdf" download>
+            <a href="/Anita Ifeoma Ikediashi CV.pdf" download>
               <FontAwesomeIcon
                 icon={faDownload}
                 className="w-5 inline-block pr-2 group-hover:translate-y-1 transition"
