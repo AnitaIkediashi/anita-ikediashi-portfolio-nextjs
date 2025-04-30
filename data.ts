@@ -1,6 +1,16 @@
 import {faGithub} from '@fortawesome/free-brands-svg-icons'
 import {faLink} from '@fortawesome/free-solid-svg-icons'
 
+type ExperienceProps = {
+  id: number
+  date: string
+  company: string
+  jobTitle: string
+  role1: string
+  role2?: string
+  role3?: string
+  role4?: string
+}
 
 export const navLinks = [
     {
@@ -67,41 +77,69 @@ export const skills = [
         "alt": "git"
     },
     {
-        "skill": "/icons8-database-80.png",
-        "alt": "sql",
+        "skill": "/prisma.png",
+        "alt": "prisma",
+    },
+    {
+        "skill": "/postgre.png",
+        "alt": "postgres",
     },
     {
         "skill": "/icons8-firebase-96.png",
         "alt": "firebase",
     },
+    {
+        "skill": "/postman.png",
+        "alt": "postman",
+    },
 ] as const;
 
-export const experience = [
+export const experience: ExperienceProps[] = [
   {
-    date: "january 2023 - present",
+    id: 1,
+    date: "august 2024 - present",
     company: "huawei",
-    jobTitle: "system software engineer 🔹 ",
+    jobTitle: "UI Designer 🔹 ",
     role1:
-      "Utilized JavaScript, SQL, custom HTML, CSS, and Python to develop custom scripts, dashboards, and tools, automating tasks such as ticketing and reporting. This led to a 20% reduction in manual labor and resource utilization for clients.",
-    role2:
-      "Collaborated closely with cross-functional teams to pinpoint automation opportunities, elicit requirements, and deliver tailored solutions that met their specific needs.",
-    role3:
-      "Integrated monitoring and logging tools seamlessly into existing systems, enabling proactive identification and resolution of operational issues.",
-    role4:
-      "Played a pivotal role in the migration of web applications and infrastructure to cloud platforms like OWS (Huawei Cloud), strategically enhancing scalability and cost efficiency.",
+      "Created user-friendly and aesthetically pleasing interfaces for web applications, prioritizing responsive design, consistency, and user centered principles to enhance the overall experience. Worked closely with development teams to ensure smooth integration and optimized performance, while consistently refining the design based on user feedback and testing",
   },
   {
-    date: "february 2022 - present",
-    company: "freelance",
-    jobTitle: "frontend engineer 🔹 ",
+    id: 2,
+    date: "april 2024 - present",
+    company: "huawei",
+    jobTitle: "technical team lead 🔹 ",
     role1:
-      "Led the development of 10+ responsive web applications such as housing, booking, portfolios etc. using modern frontend frameworks like React, ensuring optimal performance and a seamless user experience.",
+      "Directed cross-functional teams in executing complex technical projects, ensuring timely delivery, staying within budget, and maintaining high-quality standards, all while effectively managing risks and meeting stakeholder expectations. ",
     role2:
-      "Worked closely with UX/UI designers to transform wireframes and prototypes, including those from platforms like Figma, into functional and visually captivating interfaces.",
+      "Took ownership of solution delivery, from identifying opportunities for automation to overseeing the deployment of cloud infrastructure.",
+  },
+  {
+    id: 3,
+    date: "january 2023 - present",
+    company: "huawei",
+    jobTitle: "cloud engineer 🔹 ",
+    role1:
+      "Created and deployed custom scripts, dashboards, and tools using JavaScript, SQL, HTML, CSS, and Python to automate processes like ticketing and reporting, cutting manual labor and resource use by 20% for clients.",
+    role2:
+      "Worked closely with cross-functional teams to identify automation opportunities, gather requirements, and deliver tailored solutions that met business objectives.",
     role3:
-      "Enhanced website performance by optimizing tools like ESLint and Webpack, adeptly identifying and resolving performance bottlenecks to minimize load times and enhance overall responsiveness.",
+      "Integrated advanced monitoring and logging tools into systems, enabling proactive issue detection and resolution to maintain operational stability and performance.",
     role4:
-      "Fostered collaboration with the backend team to seamlessly integrate frontend applications with REST API integrations such as Axios, ensuring smooth data flow and synchronization.",
+      "Led the migration of web applications and infrastructure to cloud platforms such as OWS (Huawei Cloud), improving scalability and driving cost efficiency.",
+  },
+  {
+    id: 4,
+    date: "september 2022 - present",
+    company: "freelance",
+    jobTitle: "frontend developer 🔹 ",
+    role1:
+      "Developed and led the creation of 10+ responsive web applications, including housing, booking, and portfolio projects, using React, Next.js, and modern front-end frameworks to ensure seamless performance across devices.",
+    role2:
+      "Optimized web performance using Chrome Developer Tools, implementing lazy loading, code splitting, and asset optimization to reduce load times and enhance responsiveness while ensuring accessibility compliance with ARIA roles and semantic HTML.",
+    role3:
+      "Strengthened security by mitigating Cross-Site Scripting (XSS), CORS issues, and implementing secure authentication practices, while also integrating front-end applications with REST APIs using Axios for real-time data synchronization.",
+    role4:
+      "Built scalable, modular UI components following modern frontend modularity principles, ensuring clear separation of concerns between UI and business logic to enhance maintainability and collaboration across teams.",
   },
 ] as const;
 

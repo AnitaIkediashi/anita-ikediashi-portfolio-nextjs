@@ -14,7 +14,7 @@ const About = () => {
 
   return (
     <section
-      className="lg:h-screen md:h-[90vh] w-full xl:px-[15rem] lg:px-[5rem] md:px-20 px-8 py-24 md:py-0 relative flex flex-col justify-center overflow-y-hidden"
+      className="w-full xl:px-[15rem] lg:px-[5rem] md:px-20 px-8 py-24 relative flex flex-col justify-center overflow-y-hidden"
       data-aos="fade-up"
       data-aos-delay="650"
       data-aos-duration="1200"
@@ -26,7 +26,7 @@ const About = () => {
       </h1>
 
       {/* content */}
-      <div className="w-full grid lg:grid-cols-[300px,1fr] grid-cols-1 gap-14 md:gap-0">
+      <div className="w-full grid lg:grid-cols-[300px,1fr] grid-cols-1 gap-8 lg:gap-4">
         {/* aside tag - skills  */}
 
         <div className="order-2 lg:order-1 lg:mt-48">
@@ -62,7 +62,7 @@ const About = () => {
             experience.
           </p>
           {/* download cv */}
-          <button className="my-4 px-5 py-2 font-medium bg-color-blue-400 rounded-md lg:text-lg md:text-xl text-base tracking-wide capitalize hover:bg-color-blue-300 hover:scale-110 active:scale-105 transition group">
+          <button className="mt-4 px-5 py-2 font-medium bg-color-blue-400 rounded-md lg:text-lg md:text-xl text-base tracking-wide capitalize hover:bg-color-blue-300 hover:scale-110 active:scale-105 transition group">
             <a href="/Anita Ikediashi CV.pdf" download>
               <FontAwesomeIcon
                 icon={faDownload}

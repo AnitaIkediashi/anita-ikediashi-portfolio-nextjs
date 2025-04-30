@@ -18,7 +18,7 @@ const Hero = ({ sectionId }: ScrollToSectionProp) => {
     <section className="relative h-[84vh] w-full xl:px-[15rem] lg:px-[5rem] md:px-20 px-8 flex flex-col justify-center items-center pt-10 overflow-hidden ">
       {/* a circle */}
       <motion.div
-        className="md:w-[26rem] md:h-[26rem] w-[20rem] h-[20rem] border border-color-white/20 rounded-full absolute top-1/2 lg:top-[45%] xl:top-1/2  left-1/2  -z-10 "
+        className="md:w-[26rem] md:h-[26rem] w-[20rem] h-[20rem] border border-color-white/20 rounded-full absolute top-1/2 lg:top-[45%] xl:top-[48%] left-1/2  -z-10 "
         initial={{ scale: 1, x: "-50%", y: "-50%", opacity: 0 }}
         animate={{
           scale: [0.75, 0.85, 1, 1.1, 1],
@@ -91,7 +91,7 @@ const Hero = ({ sectionId }: ScrollToSectionProp) => {
         offset={15}
       >
         <motion.button
-          className=" w-9 h-9 border border-color-white/10 rounded-full cursor-pointer overflow-y-hidden hover:bg-color-white/20 transition duration-300 absolute bottom-[0.5rem] "
+          className=" w-9 h-9 border border-color-white/10 rounded-full cursor-pointer overflow-y-hidden hover:bg-color-white/20 transition duration-300 absolute bottom-[0.5rem] xl:-bottom-[3px]"
           initial={{ opacity: 0, x: "-50%" }}
           animate={{ opacity: 1, x: "-50%" }}
           transition={{

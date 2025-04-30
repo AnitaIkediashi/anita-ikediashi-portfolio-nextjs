@@ -8,10 +8,13 @@ const Experience = () => {
       <h1 className="capitalize mt-[1.5rem] mb-4 md:mt-0 md:text-right text-left font-extrabold lg:text-[7.5rem] md:text-7xl text-[2.5rem]  tracking-wide text-color-blue-100/30 overflow-y-hidden">
         &#60;experience/&#62;
       </h1>
-      <div className="w-full  grid lg:grid-cols-[200px,1fr] grid-cols-1 lg:gap-6 gap-0">
+      <div className="w-full  ">
         {experience.map(
-          ({ date, company, jobTitle, role1, role2, role3, role4 }) => (
-            <>
+          ({ date, company, jobTitle, role1, role2, role3, role4, id }) => (
+            <div
+              key={id}
+              className="grid lg:grid-cols-[200px,1fr] grid-cols-1 lg:gap-6 gap-0 w-full mb-4 last:mb-0"
+            >
               {/* years of experience */}
               <h3
                 className="uppercase tracking-wide lg:text-lg text-xl opacity-60"
@@ -33,19 +36,27 @@ const Experience = () => {
                   ◻️ {role1}
                 </p>
                 {/* <br /> */}
-                <p className="lg:text-lg md:text-xl text-base opacity-80 mb-5 lg:mb-0">
-                  ◻️ {role2}
-                </p>
+                {role2 && (
+                  <p className="lg:text-lg md:text-xl text-base opacity-80 mb-5 lg:mb-0">
+                    ◻️ {role2}
+                  </p>
+                )}
+
                 {/* <br /> */}
-                <p className="lg:text-lg md:text-xl text-base opacity-80 mb-5 lg:mb-0">
-                  ◻️ {role3}
-                </p>
+                {role3 && (
+                  <p className="lg:text-lg md:text-xl text-base opacity-80 mb-5 lg:mb-0">
+                    ◻️ {role3}
+                  </p>
+                )}
+
                 {/* <br /> */}
-                <p className="lg:text-lg md:text-xl text-base opacity-80 mb-5 lg:mb-0">
-                  ◻️ {role4}
-                </p>
+                {role4 && (
+                  <p className="lg:text-lg md:text-xl text-base opacity-80 mb-5 lg:mb-0">
+                    ◻️ {role4}
+                  </p>
+                )}
               </div>
-            </>
+            </div>
           )
         )}
       </div>
