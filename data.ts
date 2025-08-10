@@ -97,49 +97,29 @@ export const skills = [
 export const experience: ExperienceProps[] = [
   {
     id: 1,
-    date: "august 2024 - present",
+    date: "January 2023 - present",
     company: "huawei",
-    jobTitle: "UI Designer 🔹 ",
+    jobTitle: "UI Designer | Software Engineer 🔹 ",
     role1:
-      "Created user-friendly and aesthetically pleasing interfaces for web applications, prioritizing responsive design, consistency, and user centered principles to enhance the overall experience. Worked closely with development teams to ensure smooth integration and optimized performance, while consistently refining the design based on user feedback and testing",
+      "Led the end-to-end design and development of a team shift management dashboard for employees, enabling managers to monitor work hours, assign shifts, and track attendance in real time — reducing scheduling conflicts through automation and agile iteration.",
+    role2:
+      "Designed and implemented a Human Resource Management System (HRMS) dashboard using Vue.js and Huawei Cloud integration, replacing manual HR processes with automated workflows and speeding up manager approvals from days to hours.",
+    role3:
+      "Developed real-time monitoring tools with JavaScript and automated email alert systems, enabling instant notifications to relevant teams when issues were detected — achieving near-perfect uptime and reducing resolution time from hours to minutes.",
+    role4:
+      "Mentored junior developers, establishing coding standards, reusable component guidelines, and test coverage strategies for long-term scalability.",
   },
   {
     id: 2,
-    date: "april 2024 - present",
-    company: "huawei",
-    jobTitle: "technical team lead 🔹 ",
-    role1:
-      "Directed cross-functional teams in executing complex technical projects, ensuring timely delivery, staying within budget, and maintaining high-quality standards, all while effectively managing risks and meeting stakeholder expectations. ",
-    role2:
-      "Took ownership of solution delivery, from identifying opportunities for automation to overseeing the deployment of cloud infrastructure.",
-  },
-  {
-    id: 3,
-    date: "january 2023 - present",
-    company: "huawei",
-    jobTitle: "cloud engineer 🔹 ",
-    role1:
-      "Created and deployed custom scripts, dashboards, and tools using JavaScript, SQL, HTML, CSS, and Python to automate processes like ticketing and reporting, cutting manual labor and resource use by 20% for clients.",
-    role2:
-      "Worked closely with cross-functional teams to identify automation opportunities, gather requirements, and deliver tailored solutions that met business objectives.",
-    role3:
-      "Integrated advanced monitoring and logging tools into systems, enabling proactive issue detection and resolution to maintain operational stability and performance.",
-    role4:
-      "Led the migration of web applications and infrastructure to cloud platforms such as OWS (Huawei Cloud), improving scalability and driving cost efficiency.",
-  },
-  {
-    id: 4,
-    date: "september 2022 - present",
+    date: "March 2022 - present",
     company: "freelance",
     jobTitle: "frontend developer 🔹 ",
     role1:
-      "Developed and led the creation of 10+ responsive web applications, including housing, booking, and portfolio projects, using React, Next.js, and modern front-end frameworks to ensure seamless performance across devices.",
+      "Developed a React/Next.js property listing platform with advanced search, map integration, and mobile-first design, resulting in higher lead conversions for the client.",
     role2:
-      "Optimized web performance using Chrome Developer Tools, implementing lazy loading, code splitting, and asset optimization to reduce load times and enhance responsiveness while ensuring accessibility compliance with ARIA roles and semantic HTML.",
+      "Built a secure, responsive booking system with JWT/OAuth authentication, payment integration, and real-time availability updates — launched with zero post-release security issues.",
     role3:
-      "Strengthened security by mitigating Cross-Site Scripting (XSS), CORS issues, and implementing secure authentication practices, while also integrating front-end applications with REST APIs using Axios for real-time data synchronization.",
-    role4:
-      "Built scalable, modular UI components following modern frontend modularity principles, ensuring clear separation of concerns between UI and business logic to enhance maintainability and collaboration across teams.",
+      "Developed an automated talent acquisition form system that synced submissions to Google Sheets and sent instant email notifications to HR, eliminating manual data entry and accelerating candidate onboarding.",
   },
 ] as const;
 

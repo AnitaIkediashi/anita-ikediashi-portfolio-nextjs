@@ -41,10 +41,7 @@ const Project = ({ image, desc, title, icons, tools, idx }: ProjectProp) => {
             {icons.map(({ id, linkIcon, url }) => (
               <span key={id}>
                 <a href={url} target="_blank">
-                  <FontAwesomeIcon
-                    icon={linkIcon}
-                    className="inline-block w-5 h-5 lg:h-6 p-1 lg:w-6 border border-color-white/30 rounded-md hover:text-color-white/50 hover:rotate-6 transition active:scale-105"
-                  />
+                  <span className="text-color-white opacity-75 font-medium underline decoration-color-white text-xs hover:font-semibold hover:opacity-100">Click here</span>
                 </a>
               </span>
             ))}
