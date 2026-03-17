@@ -10,6 +10,7 @@ type ExperienceProps = {
   role2?: string
   role3?: string
   role4?: string
+  role5?: string
 }
 
 export const navLinks = [
@@ -99,15 +100,17 @@ export const experience: ExperienceProps[] = [
     id: 1,
     date: "January 2023 - present",
     company: "huawei",
-    jobTitle: "UI Designer | Software Engineer 🔹 ",
+    jobTitle: "System Software Engineer 🔹 ",
     role1:
-      "Led the end-to-end design and development of a team shift management dashboard for employees, enabling managers to monitor work hours, assign shifts, and track attendance in real time — reducing scheduling conflicts through automation and agile iteration.",
+      "Led the design and development of a team shift management dashboard enabling managers to monitor work hours, assign shifts, and track attendance in real time, improving scheduling efficiency and reducing manual coordination.",
     role2:
-      "Designed and implemented a Human Resource Management System (HRMS) dashboard using Vue.js and Huawei Cloud integration, replacing manual HR processes with automated workflows and speeding up manager approvals from days to hours.",
+      "Built a Human Resource Management System (HRMS) dashboard using Vue.js and Huawei Cloud services to automate employee management workflows and streamline approval processes",
     role3:
-      "Developed real-time monitoring tools with JavaScript and automated email alert systems, enabling instant notifications to relevant teams when issues were detected — achieving near-perfect uptime and reducing resolution time from hours to minutes.",
+      "Developed real time monitoring tools using JavaScript that triggered automated email alerts when system issues were detected, significantly reducing incident response time.",
     role4:
-      "Mentored junior developers, establishing coding standards, reusable component guidelines, and test coverage strategies for long-term scalability.",
+      "Implemented reusable UI components and scalable frontend architecture to support long term application growth and maintainability.",
+    role5:
+      "Mentored junior developers and introduced coding standards, component reuse strategies, and improved collaboration across the engineering team.",
   },
   {
     id: 2,
@@ -115,11 +118,14 @@ export const experience: ExperienceProps[] = [
     company: "freelance",
     jobTitle: "frontend developer 🔹 ",
     role1:
-      "Developed a React/Next.js property listing platform with advanced search, map integration, and mobile-first design, resulting in higher lead conversions for the client.",
+      "Enhanced a property listing platform using React and Next.js with advanced search functionality, map integration, and mobile first responsive design.",
     role2:
-      "Built a secure, responsive booking system with JWT/OAuth authentication, payment integration, and real-time availability updates — launched with zero post-release security issues.",
+      "Structured a secure booking platform with JWT authentication, payment integration, and real time availability features while optimizing application performance and SEO using Next.js.",
     role3:
-      "Developed an automated talent acquisition form system that synced submissions to Google Sheets and sent instant email notifications to HR, eliminating manual data entry and accelerating candidate onboarding.",
+      "Implemented REST API integrations with Axios to support dynamic data loading and improve user experience across applications.",
+    role4:
+      "Deployed an automated talent acquisition platform that synchronizes candidate submissions to Google Sheets and triggers real time email notifications to HR teams.",
+    role5: "Collaborated with clients across multiple time zones, delivering production ready web applications while maintaining clear technical documentation and version control using Git."
   },
 ] as const;
 

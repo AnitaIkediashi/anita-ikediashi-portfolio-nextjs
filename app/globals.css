@@ -12,6 +12,10 @@
     @apply scroll-smooth 
 } */
 
+body {
+    font-family: "Inconsolata", monospace;
+}
+
 html ::-webkit-scrollbar {
     @apply w-4
 }

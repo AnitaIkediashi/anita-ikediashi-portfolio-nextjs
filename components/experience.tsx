@@ -10,7 +10,7 @@ const Experience = () => {
       </h1>
       <div className="w-full  ">
         {experience.map(
-          ({ date, company, jobTitle, role1, role2, role3, role4, id }) => (
+          ({ date, company, jobTitle, role1, role2, role3, role4, role5, id }) => (
             <div
               key={id}
               className="grid lg:grid-cols-[200px,1fr] grid-cols-1 lg:gap-6 gap-0 w-full mb-4 last:mb-0"
@@ -53,6 +53,13 @@ const Experience = () => {
                 {role4 && (
                   <p className="lg:text-lg md:text-xl text-base opacity-80 mb-5 lg:mb-0">
                     ◻️ {role4}
+                  </p>
+                )}
+
+                {/* <br /> */}
+                {role5 && (
+                  <p className="lg:text-lg md:text-xl text-base opacity-80 mb-5 lg:mb-0">
+                    ◻️ {role5}
                   </p>
                 )}
               </div>
